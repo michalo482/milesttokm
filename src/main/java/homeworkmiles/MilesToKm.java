@@ -26,7 +26,7 @@ public class MilesToKm {
                     miles = readValue();
                 }
             } while (!matched(miles));
-            System.out.printf("%.2f mil to \u2248 %.2f km", mil(), calc(Matching.mil()));
+            System.out.printf("%.2f mil \u2248 %.2f km", mil(), calc(Matching.mil()));
         }
     }
 
