@@ -10,16 +10,15 @@ public class MilesToKm {
         if (args.length > 0) {
             for (String s : args) {
                 boolean match = s.matches("^\\d+(\\.\\d+)?$");
-                if (match == true) {
+                if (match) {
                     double mi = Double.parseDouble(s);
                     double km = mi * 1.609344;
-                    System.out.printf("%.2f \n", km);
-                } else if (!match) {
+                    System.out.printf("%.2f \u2248 %.2f \n", mi, km);
+                } else {
                     System.out.println(s + " <- zly parametr uruchomieniowy, program przyjmuje tylko liczby rzeczywiste wieksze od zera.");
                 }
             }
         } else {
-
             System.out.println("Podaj wartość w milach: ");
             do {
                 if (!matched(miles)) {

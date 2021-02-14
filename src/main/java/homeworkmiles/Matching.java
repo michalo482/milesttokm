@@ -1,9 +1,6 @@
 package homeworkmiles;
 
-
-
 public class Matching {
-
     static String miles = MilesToKm.readValue();
 
     public static boolean matched(String miles) {
@@ -15,8 +12,7 @@ public class Matching {
     }
 
     public static double calc(double mil) {
-        double km = mil * 1.609344;
-        return km;
+        return mil * 1.609344;
     }
 
 }
