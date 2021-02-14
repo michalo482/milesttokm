@@ -6,6 +6,13 @@ import static homeworkmiles.Matching.*;
 
 public class MilesToKm {
     public static void main(String[] args) {
+
+        for (String s: args) {
+            double mi = Double.parseDouble(s);
+            double km = mi * 1.609344;
+            System.out.printf("%.2f \n", km);
+        }
+
         System.out.println("Podaj wartość w milach: ");
         do {
             if (!matched(miles)) {
