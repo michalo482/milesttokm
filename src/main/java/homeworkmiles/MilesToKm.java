@@ -13,7 +13,7 @@ public class MilesToKm {
                 if (match) {
                     double mi = Double.parseDouble(s);
                     double km = mi * 1.609344;
-                    System.out.printf("%.2f \u2248 %.2f \n", mi, km);
+                    System.out.printf("%.2f mil \u2248 %.2f km \n", mi, km);
                 } else {
                     System.out.println(s + " <- zly parametr uruchomieniowy, program przyjmuje tylko liczby rzeczywiste wieksze od zera.");
                 }
